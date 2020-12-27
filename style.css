@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: arial, sans-serif;
+  font-size: small;
+}
+a {
+  color: inherit;
+}
+
+nav {
+  display: flex;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+ul li {
+  padding: 20px 13px;
+  color: black;
+}
+ul li:hover {
+  color: rgba(0, 0, 0, 0.54);
+  text-decoration: underline;
+}
+.push {
+  margin-left: auto;
+}
+.push .fa-bars {
+  margin: auto;
+  width: 50px;
+  padding: 0 10px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.push .fa-bars:hover {
+  color: black;
+}
+.push button {
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  background: #4285f4;
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+  background: linear-gradient(top, #4387fd, #4683ea);
+  margin: auto;
+  padding: 8px 12px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+#main {
+  text-align: center;
+  transform: translateY(50%);
+}
+#main .input {
+  position: relative;
+}
+#main .input .fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  color: #9aa0a6;
+}
+#main .input input {
+  border-radius: 24px;
+  outline: none;
+  width: 45%;
+  border: 1px solid #dfe1e5;
+  height: 44px;
+  margin: 20px 0;
+  padding-left: 3.5em;
+  padding-right: 2em;
+}
+#main .buttons button {
+  background-image: -webkit-linear-gradient(top, #f8f9fa, #f8f9fa);
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.54);
+}
+#footer .country {
+  border-top: 1px solid #dadce0;
+  padding: 10px 15px;
+  background-color: #f2f2f2;
+}
+#footer .items {
+  border-top: 1px solid #dadce0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+}
+#footer .items ul {
+  display: flex;
+}
+#footer .items ul li {
+  padding: 10px 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+#footer .items .push {
+  margin-left: auto;
+}
+#footer .items ul li:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+@media (max-width: 768px) {
+  #footer .items .push {
+    margin: 0 auto;
+  }
+  #main .input input {
+    width: 85%;
+  }
+  header nav .push li {
+    display: none;
+  }
+}
