@@ -20,7 +20,7 @@ ul {
 }
 ul li {
   padding: 20px 13px;
-  color: black;
+  color: rgba(0, 0, 0, 0.64);
 }
 ul li:hover {
   color: rgba(0, 0, 0, 0.54);
@@ -28,15 +28,17 @@ ul li:hover {
 }
 .push {
   margin-left: auto;
+  position: relative;
 }
-.push .fa-bars {
+.push .menu {
   margin: auto;
-  width: 50px;
+  width: 38px;
   padding: 0 10px;
-  color: rgba(0, 0, 0, 0.54);
+  fill: rgba(0, 0, 0, 0.74);
+  cursor: pointer;
 }
-.push .fa-bars:hover {
-  color: black;
+.push .menu:hover {
+  fill: rgba(0, 0, 0, 0.64);
 }
 .push button {
   border: 1px solid #4285f4;
@@ -49,6 +51,7 @@ ul li:hover {
   padding: 8px 12px;
   margin-right: 10px;
   color: #fff;
+  cursor: pointer;
 }
 
 #main {
@@ -58,12 +61,14 @@ ul li:hover {
 #main .input {
   position: relative;
 }
-#main .input .fa-search {
+#main .input .search {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 20px;
-  color: #9aa0a6;
+  margin-left: 15px;
 }
 #main .input input {
   border-radius: 24px;
@@ -135,5 +140,8 @@ ul li:hover {
   }
   header nav .push li {
     display: none;
+  }
+  #footer .items ul {
+    margin: 0 auto;
   }
 }
